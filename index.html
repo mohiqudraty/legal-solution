@@ -24,7 +24,14 @@
       rel="stylesheet"
     />
 
-    <style></style>
+    <style>
+      .garamond {
+        font-family: "EB Garamond", serif;
+      }
+      .poppins {
+        font-family: "Poppins", sans-serif;
+      }
+    </style>
   </head>
 
   <body>
@@ -32,7 +39,7 @@
     <header class="max-w-screen-2xl mx-auto">
       <!-- nav bar  -->
       <div class="navbar bg-base-100">
-        <div class="navbar-start">
+        <div class="navbar-start my-8">
           <div class="dropdown">
             <label tabindex="0" class="btn btn-ghost lg:hidden">
               <svg
@@ -153,7 +160,39 @@
           </ul>
         </div>
         <div class="navbar-end">
-          <a class="btn bg-[#B68C5A] text-white">Free Consultation</a>
+          <a class="btn bg-[#B68C5A] text-white font-poppins font-extrabold"
+            >Free Consultation</a
+          >
+        </div>
+      </div>
+      <!-- hero section  -->
+      <div
+        class="hero min-h-[550px]"
+        style="background-image: url(./images/banner.png)"
+      >
+        <div class="hero-overlay bg-opacity-60"></div>
+        <div class="hero-content text-center text-neutral-content">
+          <div class="">
+            <h1 class="mb-5 text-7xl font-garamond font-extrabold">
+              We Provide Effective <br />
+              Legal Solutions
+            </h1>
+            <p class="mb-8 w-[700px]">
+              There are many variations of passages of Lorem Ipsum available,
+              but the majority have suffered alteration in some form, by
+              injected humour.
+            </p>
+            <input
+              class="py-4 pl-5 pr-80 rounded-lg mr-6"
+              type="email"
+              placeholder="Search your services"
+            />
+            <button
+              class="btn bg-[#B68C5A] text-white font-poppins font-extrabold border-none"
+            >
+              Search
+            </button>
+          </div>
         </div>
       </div>
     </header>
