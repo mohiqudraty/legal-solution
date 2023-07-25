@@ -1,200 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" data-theme="light" />
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Legal Solution by Qudraty</title>
+    <title>Legal Solution By Qudraty</title>
+    <!-- tailwind and daisy ui cdn  link  -->
     <link
-      rel="shortcut icon"
-      href="./images/location.png"
-      type="image/x-icon"
-    />
-    <!-- daisy ui and tailwind css link  -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/daisyui@3.3.1/dist/full.css"
+      href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css"
       rel="stylesheet"
       type="text/css"
     />
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- eb garamond and poppins google font link -->
+
+    <!-- poppins and garamond font  -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@800&family=Poppins:wght@400;600&display=swap"
       rel="stylesheet"
     />
+    <!-- font awesome cdn  -->
+    <script
+      src="https://kit.fontawesome.com/fb1163e210.js"
+      crossorigin="anonymous"
+    ></script>
 
     <style>
-      .garamond {
-        font-family: "EB Garamond", serif;
-      }
       .poppins {
         font-family: "Poppins", sans-serif;
       }
+      .garamond {
+        font-family: "EB Garamond", serif;
+      }
     </style>
   </head>
-
   <body>
-    <!-- header section  -->
-    <header class="max-w-screen-2xl mx-auto">
-      <!-- nav bar  -->
-      <div class="navbar bg-base-100">
-        <div class="navbar-start my-8">
-          <div class="dropdown">
-            <label tabindex="0" class="btn btn-ghost lg:hidden">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="h-5 w-5"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M4 6h16M4 12h8m-8 6h16"
-                />
-              </svg>
-            </label>
-            <ul
-              tabindex="0"
-              class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
-            >
-              <li><a>Home</a></li>
-              <li>
-                <a>Services</a>
-                <ul class="p-2">
-                  <li><a>জেল</a></li>
-                  <li><a>রিমান্ড</a></li>
-                  <li><a>ফাঁসি</a></li>
-                </ul>
-              </li>
-              <li>
-                <a>Cases</a>
-                <ul class="p-2">
-                  <li><a>কম দামে ওয়েবসাইট ক্রয়-বিক্রয়</a></li>
-                  <li><a>ছোট্টদের সাথে কথা বলা</a></li>
-                  <li><a>লন্ডন যাওয়ার জন্য বিয়ে করার চেষ্টা করা</a></li>
-                  <li><a>দাড়ি নেই তবুও ভার্সিটিতে যাওয়া</a></li>
-                  <li><a>শুভর মতো দাড়ি খাটো করে মরার মত হওয়া</a></li>
-                  <li><a>মাহমুদের মত ৩০হাজার টাকায় কোর্স বিক্রয় করা</a></li>
-                  <li><a>অন্যান্য</a></li>
-                </ul>
-              </li>
-              <li>
-                <a>Blog</a>
-                <ul class="p-2">
-                  <li><a>ব্লগ লেখার সময় নাই</a></li>
-                  <li><a>কিছুদিন পরে আইলে পাইবায়</a></li>
-                </ul>
-              </li>
-              <li>
-                <a>Contact Us</a>
-                <ul class="p-2">
-                  <li><a>+88 016 03 - 19 67 24</a></li>
-                  <li>
-                    <a
-                      href="https://web.facebook.com/mohiqudraty/"
-                      target="_blank"
-                      >Facebook</a
-                    >
-                  </li>
-                </ul>
-              </li>
-            </ul>
-          </div>
-          <a class="btn glass"><img src="./images/logo2.png" alt="" /></a>
-        </div>
-        <div class="navbar-center hidden lg:flex">
-          <ul class="menu menu-horizontal px-1">
-            <li><a>Home</a></li>
-            <li tabindex="0">
-              <details>
-                <summary>Services</summary>
-                <ul class="p-2">
-                  <li><a>জেল</a></li>
-                  <li><a>রিমান্ড</a></li>
-                  <li><a>ফাঁসি</a></li>
-                </ul>
-              </details>
-            </li>
-            <li tabindex="0">
-              <details>
-                <summary>Cases</summary>
-                <ul class="p-2">
-                  <li><a>কম দামে ওয়েবসাইট ক্রয়-বিক্রয়</a></li>
-                  <li><a>ছোট্টদের সাথে কথা বলা</a></li>
-                  <li><a>লন্ডন যাওয়ার জন্য বিয়ে করার চেষ্টা করা</a></li>
-                  <li><a>দাড়ি নেই তবুও ভার্সিটিতে যাওয়া</a></li>
-                  <li><a>শুভর মতো দাড়ি খাটো করে মরার মত হওয়া</a></li>
-                  <li><a>মাহমুদের মত ৩০হাজার টাকায় কোর্স বিক্রয় করা</a></li>
-                  <li><a>অন্যান্য</a></li>
-                </ul>
-              </details>
-            </li>
-            <li tabindex="0">
-              <details>
-                <summary>Blog</summary>
-                <ul class="p-2">
-                  <li><a>ব্লগ লেখার সময় নাই</a></li>
-                  <li><a>কিছুদিন পরে আইলে পাইবায়</a></li>
-                </ul>
-              </details>
-            </li>
-            <li tabindex="0">
-              <details>
-                <summary>Contact Us</summary>
-                <ul class="p-2">
-                  <li><a>+88 016 03 - 19 67 24</a></li>
-                  <li>
-                    <a
-                      href="https://web.facebook.com/mohiqudraty/"
-                      target="_blank"
-                      >Facebook</a
-                    >
-                  </li>
-                </ul>
-              </details>
-            </li>
-          </ul>
-        </div>
-        <div class="navbar-end">
-          <a class="btn bg-[#B68C5A] text-white font-poppins font-extrabold"
-            >Free Consultation</a
-          >
-        </div>
-      </div>
-      <!-- hero section  -->
-      <div
-        class="hero min-h-[550px]"
-        style="background-image: url(./images/banner.png)"
+    <header class="container mx-auto">
+      <nav
+        class="flex flex-col lg:flex-row justify-between items-center py-5 poppins"
       >
-        <div class="hero-overlay bg-opacity-60"></div>
-        <div class="hero-content text-center text-neutral-content">
-          <div class="">
-            <h1 class="mb-5 text-7xl font-garamond font-extrabold">
-              We Provide Effective <br />
-              Legal Solutions
-            </h1>
-            <p class="mb-8 w-[700px]">
-              There are many variations of passages of Lorem Ipsum available,
-              but the majority have suffered alteration in some form, by
-              injected humour.
-            </p>
-            <input
-              class="py-4 pl-5 pr-80 rounded-lg mr-6"
-              type="email"
-              placeholder="Search your services"
-            />
-            <button
-              class="btn bg-[#B68C5A] text-white font-poppins font-extrabold border-none"
-            >
-              Search
-            </button>
+        <button class="btn"><img src="./images/logo2.png" alt="" /></button>
+        <ul
+          class="flex flex-col gap-2 my-3 lg:gap-8 items-center md:flex-row lg:flex-row font-normal"
+        >
+          <li>Home</li>
+          <li>Services<i class="fa-solid fa-angle-right mx-2"></i></li>
+          <li>Cases<i class="fa-solid fa-angle-right mx-2"></i></li>
+          <li>Blog<i class="fa-solid fa-angle-right mx-2"></i></li>
+          <li>Contact Us<i class="fa-solid fa-angle-right mx-2"></i></li>
+        </ul>
+        <button class="btn bg-[#B68C5A] text-white font-semibold">
+          Free Consultation
+        </button>
+      </nav>
+      <!-- hero section  -->
+      <section class="">
+        <div
+          class="hero min-h-full lg:min-h-[550px]"
+          style="background-image: url(./images/banner.png)"
+        >
+          <div class="hero-overlay bg-opacity-60"></div>
+          <div class="hero-content text-center text-neutral-content">
+            <div class="max-w-screen-md">
+              <h1 class="mb-5 text-4xl lg:text-7xl font-extrabold garamond">
+                We Provide Effective <br />
+                Legal Solutions
+              </h1>
+              <p class="mb-5">
+                There are many variations of passages of Lorem Ipsum available,
+                but the majority have suffered alteration in some form, by
+                injected humour.
+              </p>
+              <input
+                class="py-3 pl-5 mb-3 lg:pr-80 rounded-lg"
+                type="email"
+                placeholder="Search your services"
+              />
+              <button
+                class="btn bg-[#B68C5A] text-white font-semibold border-none"
+              >
+                Search
+              </button>
+            </div>
           </div>
         </div>
-      </div>
+      </section>
     </header>
   </body>
 </html>
